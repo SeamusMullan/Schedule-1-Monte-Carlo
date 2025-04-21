@@ -300,8 +300,12 @@ def main():
     print("Schedule 1 Monte Carlo Simulations - Ride the Bus")
     print("===============================================")
     
-    # Create Monte Carlo simulation
-    monte_carlo = MonteCarlo(random_seed=42)
+    # Create Monte Carlo simulation with a time-based random seed
+    # This ensures different results each time the program runs
+    import time
+    random_seed = int(time.time()) % 10000
+    print(f"\nUsing random seed: {random_seed}")
+    monte_carlo = MonteCarlo(random_seed=random_seed)
     
     # Simulate Strategy 1: Cash out after color
     print("\nSimulating Strategy 1: Cash out after color round...")
