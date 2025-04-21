@@ -1,0 +1,13 @@
+[project]
+name = "schedule-1-monte-carlo"
+version = "1.0.0"
+description = "A project to model the casino games in Schedule 1 using Monte Carlo simulation."
+authors = [
+    { name = "Seamus Mullan", email = "seamusmullan2023@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "black>=25.1.0",
+    "pydeps>=3.0.1",
+]
